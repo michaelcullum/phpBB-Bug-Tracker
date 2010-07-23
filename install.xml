@@ -4,9 +4,16 @@
 <mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.phpbb.com/mods/xml/modx-1.2.1.xsd">
 	<header>
 		<license>http://opensource.org/licenses/gpl-license.php GNU General Public License v2</license>
-		<title lang="en">phpBB Tracker</title>
+		<title lang="en">phpBB Tracker II</title>
 		<description lang="en">Full tracker add-on for phpBB 3.0.x</description>
 		<author-group>
+			<author>
+				<realname>Michael Cullum</realname>
+				<email>sa.chelsea@live.co.uk</email>
+				<username>Unknown Bliss</username>
+				<homepage>http://www.unknownbliss.co.uk</homepage>
+				<contributions />
+			</author>
 			<author>
 				<realname>J. Russo</realname>
 				<email>jrsweets@gmail.com</email>
@@ -24,74 +31,15 @@
 		</author-group>
 		<author-notes><![CDATA[This MOD requires a minimum PHP version of 5.0.0.]]>
 		</author-notes>
-		<mod-version>0.3.0</mod-version>
+		<mod-version>0.0.1</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>500</time>
-			<target-version>3.0.0</target-version>
+			<target-version>3.0.7-PL1</target-version>
 		</installation>
 		<history>
-			<entry>
-				<date>2008-03-04</date>
-				<rev-version>0.1.0</rev-version>
-				<changelog lang="en">
-					<change>Initial Beta Release</change>
-				</changelog>
-			</entry>
-			<entry>
-				<date>2008-03-17</date>
-				<rev-version>0.1.1</rev-version>
-				<changelog lang="en">
-					<change>Added management options to ticket reply</change>
-					<change>Added attachement form to subsilver2 templates</change>
-					<change>Added htmlspecialchars_decode() for emails</change>
-					<change>Added check to block blank entries in ACP</change>
-					<change>Added visual update to search box</change>
-					<change>Fixed bug viewing all users tickets</change>
-					<change>Fixed bug with sort order for statistics</change>
-					<change>Fixed bug with pagination while sorting/filtering tickets</change>
-					<change>Fixed bug removing attachments for posts when deleting</change>
-					<change>Fixed bug with language variables when viewing statistics</change>
-					<change>Fixed bug with installation script and updating from older versions</change>
-					<change>Fixed bug causing tracker link to appear in viewonline breadcrumbs/nav links</change>
-					<change>Increased size of ticket and post description</change>
-				</changelog>
-			</entry>
-			<entry>
-				<date>2008-03-18</date>
-				<rev-version>0.1.2</rev-version>
-				<changelog lang="en">
-					<change>Added group support to "Show tickets assigned to me"</change>
-					<change>Fixed bug causing missing column in project table</change>
-					<change>Fixed bug with missing htmlspecialchars_decode in email subject</change>
-					<change>Fixed various bugs with installer/updater</change>
-				</changelog>
-			</entry>
-			<entry>
-				<date>2009-01-14</date>
-				<rev-version>0.2.0</rev-version>
-				<changelog lang="en">
-					<change>Added new issue buttons to prosilver and subsilver2</change>
-					<change>Added ability to enable/disable versions</change>
-					<change>Added ticket and project subscriptions</change>
-					<change>Added ability to set security tickets</change>
-					<change>Fixed many style related bugs</change>
-					<change>Updated modx to version 1.2.1</change>
-					<change>Updated installation script</change>
-					<change>Updated minimum PHP version to 5.0.0.</change>				
-				</changelog>
-			</entry>
-			<entry>
-				<date>2009-01-23</date>
-				<rev-version>0.3.0</rev-version>
-				<changelog lang="en">
-					<change>Fixed subscription emails</change>
-					<change>Fixed various style issues</change>			
-				</changelog>
-			</entry>
 		</history>
 		<link-group>
-			<link type="template" href="prosilver.xml" lang="en">prosilver</link>
 			<link type="template" href="subsilver2.xml" lang="en">subsilver2</link>
 		</link-group>
 	</header>
@@ -205,7 +153,47 @@
 		break;]]></action>
 			</edit>
 		</open>
+			<action-group>
+		<copy>
+			<file from="root/styles/prosilver/template/tracker/*.*" to="styles/prosilver/template/tracker/" />
+			<file from="root/styles/prosilver/imageset/en/button_issue_new.gif" to="styles/prosilver/imageset/en/button_issue_new.gif" />
+		</copy>
+		<open src="styles/prosilver/template/overall_header.html">
+			<edit>
+				<find><![CDATA[</head>]]></find>
+				<action type="before-add"><![CDATA[<!-- IF S_IN_TRACKER -->
+<!-- INCLUDE tracker/tracker_header.html -->
+<!-- ENDIF -->]]></action>
+			</edit>
+					<edit>
+				<find><![CDATA[				<li class="icon-faq"><a href="{U_FAQ}" title="{L_FAQ_EXPLAIN}">{L_FAQ}</a></li>]]></find>
+				<action type="before-add"><![CDATA[				<li class="icon-faq"><a href="{U_TRACKER}" title="{L_TRACKER}">{L_TRACKER}</a></li>
+]]></action>
+			</edit>
+		</open>
+		<open src="styles/prosilver/imageset/en/imageset.cfg">
+			<edit>
+				<find>img_button_topic_reply = button_topic_reply.gif*25*96</find>
+				<action type="after-add">img_button_issue_new = button_issue_new.gif*25*95</action>
+			</edit>
+		</open>
+		<open src="styles/prosilver/theme/buttons.css">
+			<edit>
+				<find><![CDATA[.reply-icon span	{ background: transparent none 0 0 no-repeat; }]]></find>
+				<action type="after-add"><![CDATA[.issue-icon span	{ background: transparent none 0 0 no-repeat; }]]></action>
+			</edit>
+			<edit>
+				<find><![CDATA[.buttons div.reply-icon		{ width: {IMG_BUTTON_TOPIC_REPLY_WIDTH}px; height: {IMG_BUTTON_TOPIC_REPLY_HEIGHT}px; }]]></find>
+				<action type="after-add"><![CDATA[.buttons div.issue-icon	{ width: {IMG_BUTTON_ISSUE_NEW_WIDTH}px; height: {IMG_BUTTON_ISSUE_NEW_HEIGHT}px; }]]></action>
+			</edit>
+		</open>
+		<open src="styles/prosilver/theme/colours.css">
+			<edit>
+				<find><![CDATA[.reply-icon span	{ background-image: url("{IMG_BUTTON_TOPIC_REPLY_SRC}"); }]]></find>
+				<action type="after-add"><![CDATA[.issue-icon span	{ background-image: url("{IMG_BUTTON_ISSUE_NEW_SRC}"); }]]></action>
+			</edit>
+		</open>
 		<diy-instructions lang="en">Run the included installer at http://yoursite.com/phpBB/install/index.php
-Once done make sure to remove install folder from your server.</diy-instructions>
+Once done make sure to remove install folder from your server. Refresh your cache and style templates</diy-instructions>
 	</action-group>
 </mod>
