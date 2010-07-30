@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="modx.prosilver.en.xsl"?>
+<!--NOTICE: Please open this file in your web browser. If presented with a security warning, you may safely tell it to allow the blocked content.-->
+<!--For security purposes, please check: http://www.phpbb.com/mods/ for the latest version of this MOD.\nAlthough MODs are checked before being allowed in the MODs Database there is no guarantee that there are no security problems within the MOD.\nNo support will be given for MODs not found within the MODs Database which can be found at http://www.phpbb.com/mods/-->
+<mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.phpbb.com/mods/xml/modx-1.2.5.xsd">
+	<header>
+		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (offline version)"/>
+		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
+		<title lang="en"><![CDATA[phpBB Tracker]]></title>
+		<description lang="en"><![CDATA[Full tracker add-on for phpBB 3.0.x]]></description>
+		<author-notes lang="en"><![CDATA[This MOD requires a minimum PHP version of 5.0.0.]]></author-notes>
+		<author-group>
+			<author>
+				<realname><![CDATA[Jeff Russo]]></realname>
+				<username><![CDATA[JRSweets]]></username>
+				<homepage><![CDATA[http://www.jeffrusso.net]]></homepage>
+				<email><![CDATA[jrsweets@gmail.com]]></email>
+				<contributions-group>
+					<contributions status="past" position="Developer"/>
+				</contributions-group>
+			</author>
+			<author>
+				<realname><![CDATA[Igor Wiedler]]></realname>
+				<username><![CDATA[evil<3]]></username>
+				<homepage><![CDATA[http://phpbbmodders.net]]></homepage>
+				<email><![CDATA[evil3@phpbb.com]]></email>
+				<contributions-group>
+					<contributions status="past" position="Developer"/>
+				</contributions-group>
+			</author>
+			<author>
+				<realname><![CDATA[Michael C.]]></realname>
+				<username><![CDATA[Unknown Bliss]]></username>
+				<homepage><![CDATA[http://unknownbliss.co.uk]]></homepage>
+				<email><![CDATA[sa.chelsea@live.co.uk]]></email>
+				<contributions-group>
+					<contributions status="current" position="Developer"/>
+				</contributions-group>
+			</author>
+		</author-group>
+		<mod-version>0.3.0</mod-version>
+		<installation>
+			<level>easy</level>
+			<time>480</time>
+			<target-version>3.0.0</target-version>
+		</installation>
+		<history>
+			<entry>
+				<date>2010-07-30</date>
+				<rev-version>1.0.0</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[Updated Copyright]]></change>
+				</changelog>
+			</entry>
+		</history>
+		<link-group>
+			<link type="template" href="subsilver2.xml" lang="en">subsilver2</link>
+		</link-group>
+	</header>
+	<action-group>
+		<copy>
+			<file from="root/tracker.php" to="tracker.php"/>
+			<file from="root/adm/style/acp_tracker.html" to="adm/style/acp_tracker.html"/>
+			<file from="root/install/*.*" to="install/"/>
+			<file from="root/includes/acp/acp_tracker.php" to="includes/acp/acp_tracker.php"/>
+			<file from="root/includes/acp/info/acp_tracker.php" to="includes/acp/info/acp_tracker.php"/>
+			<file from="root/includes/tracker/functions_files.php" to="includes/tracker/functions_files.php"/>
+			<file from="root/includes/tracker/tracker_api.php" to="includes/tracker/tracker_api.php"/>
+			<file from="root/includes/tracker/tracker_cache.php" to="includes/tracker/tracker_cache.php"/>
+			<file from="root/includes/tracker/tracker_class.php" to="includes/tracker/tracker_class.php"/>
+			<file from="root/includes/tracker/tracker_constants.php" to="includes/tracker/tracker_constants.php"/>
+			<file from="root/includes/tracker/tracker_download.php" to="includes/tracker/tracker_download.php"/>
+			<file from="root/includes/tracker/tracker_viewonline.php" to="includes/tracker/tracker_viewonline.php"/>
+			<file from="root/includes/tracker/tracker_status.php" to="includes/tracker/tracker_status.php"/>
+			<file from="root/includes/tracker/tracker_types.php" to="includes/tracker/tracker_types.php"/>
+			<file from="root/language/en/email/tracker_notify.txt" to="language/en/email/tracker_notify.txt"/>
+			<file from="root/language/en/email/tracker_notify_comment.txt" to="language/en/email/tracker_notify_comment.txt"/>
+			<file from="root/language/en/email/tracker_notify_watch.txt" to="language/en/email/tracker_notify_watch.txt"/>
+			<file from="root/language/en/email/tracker_notify_status_double.txt" to="language/en/email/tracker_notify_status_double.txt"/>
+			<file from="root/language/en/email/tracker_notify_status_single.txt" to="language/en/email/tracker_notify_status_single.txt"/>
+			<file from="root/language/en/mods/permissions_tracker.php" to="language/en/mods/permissions_tracker.php"/>
+			<file from="root/language/en/mods/tracker.php" to="language/en/mods/tracker.php"/>
+			<file from="root/language/en/mods/tracker_install.php" to="language/en/mods/tracker_install.php"/>
+			<file from="root/language/en/mods/info_acp_tracker.php" to="language/en/mods/info_acp_tracker.php"/>
+			<file from="root/files/tracker/index.htm" to="files/tracker/index.htm"/>
+		</copy>
+		<open src="viewonline.php">
+			<edit>
+				<find><![CDATA[		case 'ucp':			$location = $user->lang['VIEWING_UCP'];			// Grab some common modules			$url_params = array(				'mode=register'		=> 'VIEWING_REGISTER',				'i=pm&mode=compose'	=> 'POSTING_PRIVATE_MESSAGE',				'i=pm&'				=> 'VIEWING_PRIVATE_MESSAGES',				'i=profile&'		=> 'CHANGING_PROFILE',				'i=prefs&'			=> 'CHANGING_PREFERENCES',			);			foreach ($url_params as $param => $lang)			{				if (strpos($row['session_page'], $param) !== false)				{					$location = $user->lang[$lang];					break;				}			}			$location_url = append_sid("{$phpbb_root_path}index.$phpEx");		break;]]></find>
+				<action type="after-add"><![CDATA[		case 'tracker':			include($phpbb_root_path . 'includes/tracker/tracker_viewonline.' . $phpEx);		break;]]></action>
+			</edit>
+		</open>
+		<open src="includes/functions.php">
+			<edit>
+				<find><![CDATA[/*** Generate page header*/function page_header($page_title = '', $display_online_list = true, $item_id = 0, $item = 'forum'){	global $db, $config, $template, $SID, $_SID, $user, $auth, $phpEx, $phpbb_root_path;]]></find>
+				<action type="after-add"><![CDATA[	global $tracker;]]></action>
+			</edit>
+			<edit>
+				<find><![CDATA[// The following assigns all _common_ variables that may be used at any point in a template.]]></find>
+				<action type="after-add"><![CDATA[	if (!isset($tracker))	{		$user->add_lang('mods/tracker');		$template->assign_var('U_TRACKER', append_sid("{$phpbb_root_path}tracker.$phpEx"));	}]]></action>
+			</edit>
+		</open>
+		<open src="includes/functions_user.php">
+			<edit>
+				<find><![CDATA[		$sql = 'UPDATE ' . TOPICS_TABLE . " SET topic_last_poster_colour = '" . $db->sql_escape($sql_ary['user_colour']) . "'			WHERE " . $db->sql_in_set('topic_last_poster_id', $user_id_ary);		$db->sql_query($sql);]]></find>
+				<action type="after-add"><![CDATA[		global $cache, $phpbb_root_path, $phpEx, $table_prefix;		include($phpbb_root_path . 'includes/tracker/tracker_constants.' . $phpEx);		$sql = 'UPDATE ' . TRACKER_TICKETS_TABLE . " SET last_visit_user_colour = '" . $db->sql_escape($sql_ary['user_colour']) . "'			WHERE " . $db->sql_in_set('last_visit_user_id', $user_id_ary);		$db->sql_query($sql);]]></action>
+			</edit>
+		</open>
+		<open src="includes/acp/acp_language.php">
+			<edit>
+				<find><![CDATA[, 'button_topic_reply']]></find>
+				<inline-edit>
+					<inline-find><![CDATA[, 'button_topic_reply']]></inline-find>
+					<inline-action type="after-add"><![CDATA[, 'button_issue_new']]></inline-action>
+				</inline-edit>
+			</edit>
+		</open>
+		<open src="includes/acp/acp_styles.php">
+			<edit>
+				<find><![CDATA[, 'button_topic_reply']]></find>
+				<inline-edit>
+					<inline-find><![CDATA[, 'button_topic_reply']]></inline-find>
+					<inline-action type="after-add"><![CDATA[, 'button_issue_new']]></inline-action>
+				</inline-edit>
+			</edit>
+		</open>
+		<open src="language/en/acp/styles.php">
+			<edit>
+				<find><![CDATA[	'IMG_BUTTON_TOPIC_REPLY'	=> 'Reply topic',]]></find>
+				<action type="after-add"><![CDATA[	'IMG_BUTTON_ISSUE_NEW'	=> 'New issue',]]></action>
+			</edit>
+		</open>
+		<php-installer><![CDATA[install/install.php]]></php-installer>
+		<diy-instructions lang="en"><![CDATA[Run the included installer at http://yoursite.com/phpBB/install/index.phpOnce done make sure to remove install folder from your server.]]></diy-instructions>
+	</action-group>
+</mod>

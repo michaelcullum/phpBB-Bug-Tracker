@@ -2,8 +2,9 @@
 /**
 *
 * @package tracker
-* @version $Id: config.php 243 2009-01-22 19:54:09Z JRSweets $
-* @copyright (c) 2008 http://www.jeffrusso.net
+* @version 1.0.0
+* @copyright (c) 2008 http://www.jeffrusso.net 
+* @copyright (c) Editied by: Unknown Bliss for use of Bug Tracker II
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -26,9 +27,9 @@ if (!defined('IN_PHPBB'))
 */
 
 $mod_config = array(
-	'mod_title'					=> 'phpBB Tracker',
-	'mod_version'				=> '0.3.0',
-	'phpbb_version'				=> '3.0.0',
+	'mod_title'					=> 'phpBB Tracker II',
+	'mod_version'				=> '1.0.0',
+	'phpbb_version'				=> '3.0.7-PL1',
 	'data_file'					=> 'schemas/tracker/schema_data.sql',
 	'remove_data_file'			=> 'schemas/tracker/remove_schema_data.sql',
 	'pg_remove_data_file'		=> 'schemas/tracker/postgres_remove_schema_data.sql',

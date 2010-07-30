@@ -2,8 +2,9 @@
 /**
 *
 * @package tracker
-* @version $Id: functions_files.php 206 2008-12-31 15:37:03Z JRSweets $
-* @copyright (c) 2007, 2008 jrsweets
+* @version 1.0.0
+* @copyright (c) Unknown Bliss of http://unknownbliss.co.uk (Present Contributor)
+* @copyright (c) Jeff Russo and evil<3 (Past Contributors)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */

@@ -2,7 +2,7 @@
 /**
 *
 * @package install
-* @version $Id: install_main.php 152 2008-12-23 17:38:29Z JRSweets $
+* @version 1.0.0
 * @copyright (c) 2005 phpBB Group
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *

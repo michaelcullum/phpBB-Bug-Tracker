@@ -1,11 +1,10 @@
 <?php
 /**
 *
-* install [English]
-*
-* @package language
-* @version $Id: tracker_install.php 190 2008-12-28 19:09:52Z JRSweets $
-* @copyright (c) 2005 phpBB Group
+* @package tracker
+* @version 1.0.0
+* @copyright (c) Unknown Bliss of http://unknownbliss.co.uk (Present Contributor)
+* @copyright (c) Jeff Russo and evil<3 (Past Contributors)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */

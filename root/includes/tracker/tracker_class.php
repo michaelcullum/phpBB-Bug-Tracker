@@ -2,8 +2,9 @@
 /**
 *
 * @package tracker
-* @version $Id: tracker_class.php 131 2008-05-17 13:48:09Z evil3 $
-* @copyright (c) 2008 http://www.jeffrusso.net
+* @version 1.0.0
+* @copyright (c) Unknown Bliss of http://unknownbliss.co.uk (Present Contributor)
+* @copyright (c) Jeff Russo and evil<3 (Past Contributors)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */

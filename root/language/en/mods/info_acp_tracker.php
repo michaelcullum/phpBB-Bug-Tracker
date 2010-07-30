@@ -1,11 +1,10 @@
 <?php
 /**
 *
-* acp info_acp_tracker[English]
-*
-* @package language
-* @version $Id: info_acp_tracker.php 83 2008-03-19 02:43:37Z jrsweets $
-* @copyright (c) 2008 http://www.jeffrusso.net
+* @package tracker
+* @version 1.0.0
+* @copyright (c) Unknown Bliss of http://unknownbliss.co.uk (Present Contributor)
+* @copyright (c) Jeff Russo and evil<3 (Past Contributors)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */

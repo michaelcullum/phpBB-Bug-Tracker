@@ -2,8 +2,9 @@
 /**
 *
 * @package tracker
-* @version $Id: tracker_viewonline.php 157 2008-12-23 20:08:25Z JRSweets $
-* @copyright (c) 2008 http://www.JeffRusso.net
+* @version 1.0.0
+* @copyright (c) Unknown Bliss of http://unknownbliss.co.uk (Present Contributor)
+* @copyright (c) Jeff Russo and evil<3 (Past Contributors)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */

@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package install
-* @version $Id: index.php 222 2009-01-07 02:20:21Z JRSweets $
-* @copyright (c) 2005 phpBB Group
+* @package tracker
+* @version 1.0.0
+* @copyright (c) phpBB Group
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
