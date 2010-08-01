@@ -45,19 +45,19 @@ $lang = array_merge($lang, array(
 	'DUPLICATE_AUTH_FOUND'					=> '%s was found %s times',
 
 	'FILES_REQUIRED'						=> 'Files and Directories',
-	'FILES_REQUIRED_EXPLAIN'				=> '<strong>Required</strong> - In order to function correctly phpBB Tracker needs to be able to access or write to certain files or directories. If you see “Cannot find” you need to create the relevant file or directory. If you see “Unwritable” you need to change the permissions on the file or directory to allow phpBB Tracker to write to it.',
+	'FILES_REQUIRED_EXPLAIN'				=> '<strong>Required</strong> - In order to function correctly phpBB Firetracker needs to be able to access or write to certain files or directories. If you see “Cannot find” you need to create the relevant file or directory. If you see “Unwritable” you need to change the permissions on the file or directory to allow phpBB Firetracker to write to it.',
 	'FOUND'									=> 'Found',
 
 	'GPL'									=> 'General Public License',
 
 	'INSTALL_CONGRATS'						=> 'Congratulations!',
 	'INSTALL_CONGRATS_EXPLAIN'				=> '
-		<p>You have now successfully installed phpBB Tracker %1$s.</p>
+		<p>You have now successfully installed phpBB Firetracker %1$s.</p>
 		<p>Clicking the button below will take you to your Administration Control Panel (ACP). Take some time to examine the options available to you</p><p><strong>Please now delete, move or rename the install directory before you use your board. If this directory is still present, only the Administration Control Panel (ACP) will be accessible.</strong></p>',
-	'INSTALL_INTRO'							=> 'Welcome to phpBB Tracker Installation',
-	'INSTALL_INTRO_BODY'					=> 'With this option, it is possible to install phpBB Tracker to your database.',
+	'INSTALL_INTRO'							=> 'Welcome to phpBB Firetracker Installation',
+	'INSTALL_INTRO_BODY'					=> 'With this option, it is possible to install phpBB Firetracker to your database.',
 	'INSTALL_LOGIN'							=> 'Proceed to ACP',
-	'INSTALL_PANEL'							=> 'phpBB Tracker Installation Panel',
+	'INSTALL_PANEL'							=> 'phpBB Firetracker Installation Panel',
 	'INSTALL_START'							=> 'Start install',
 	'INSTALL_TEST'							=> 'Test again',
 	'INST_ERR'								=> 'Installation error',
@@ -73,26 +73,26 @@ $lang = array_merge($lang, array(
 	'NEXT_STEP'								=> 'Proceed to next step',
 	'NOT_FOUND'								=> 'Cannot find',
 
-	'OVERVIEW_BODY'							=> 'Welcome to phpBB Tracker!<br /><br />phpBB Tracker is feature-rich, user-friendly, and is fully supported.<br /><br />This installation system will guide you through installing phpBB Tracker, updating to the latest version of phpBB Tracker from past releases, uninstalling phpBB Tracker and verifying phpBB Tracker is installed correctly. To read the phpBB Tracker license or learn about obtaining support and our stance on it, please select the respective options from the side menu. To continue, please select the appropriate tab above.',
+	'OVERVIEW_BODY'							=> 'Welcome to phpBB Firetracker!<br /><br />phpBB Tracker is feature-rich, user-friendly, and is fully supported.<br /><br />This installation system will guide you through installing phpBB Tracker, updating to the latest version of phpBB Tracker from past releases, uninstalling phpBB Tracker and verifying phpBB Tracker is installed correctly. To read the phpBB Tracker license or learn about obtaining support and our stance on it, please select the respective options from the side menu. To continue, please select the appropriate tab above.',
 
 	'PHPBB_VERSION_REQD'					=> 'phpBB version >= %s',
 	'PHP_SETTINGS'							=> 'phpBB version',
-	'PHP_SETTINGS_EXPLAIN'					=> '<strong>Required</strong> - You must be running at least version %s of phpBB in order to install phpBB Tracker.',
+	'PHP_SETTINGS_EXPLAIN'					=> '<strong>Required</strong> - You must be running at least version %s of phpBB in order to install phpBB Firetracker.',
 
-	'REQUIREMENTS_EXPLAIN'					=> 'Before proceeding with the full installation phpBB Tracker will carry out some tests on your server configuration and files to ensure that you are able to install and run phpBB Tracker. Please ensure you read through the results thoroughly and do not proceed until all the required tests are passed. If you wish to use any of the features depending on the optional tests, you should ensure that these tests are passed also.',
+	'REQUIREMENTS_EXPLAIN'					=> 'Before proceeding with the full installation phpBB Firetracker will carry out some tests on your server configuration and files to ensure that you are able to install and run phpBB Firetracker. Please ensure you read through the results thoroughly and do not proceed until all the required tests are passed. If you wish to use any of the features depending on the optional tests, you should ensure that these tests are passed also.',
 	'REQUIREMENTS_TITLE'					=> 'Installation compatibility',
 
 	'STAGE_INSTALL'							=> 'Install',
-	'STAGE_INSTALL_TRACKER'					=> 'Installation of phpBB Tracker',
-	'STAGE_INSTALL_TRACKER_EXPLAIN'			=> 'The database tables, modules, permissions and data used by phpBB Tracker have been created.',
+	'STAGE_INSTALL_TRACKER'					=> 'Installation of phpBB Firetracker',
+	'STAGE_INSTALL_TRACKER_EXPLAIN'			=> 'The database tables, modules, permissions and data used by phpBB Firetracker have been created.',
 	'STAGE_INTRO'							=> 'Introduction',
 	'STAGE_REQUIREMENTS'					=> 'Requirements',
 	'STAGE_UNINSTALL'						=> 'Uninstall',
-	'STAGE_UNINSTALL_TRACKER'				=> 'Uninstallation of phpBB Tracker',
-	'STAGE_UNINSTALL_TRACKER_EXPLAIN'		=> 'The database tables, modules, permissions and data used by phpBB Tracker have been removed from the database.  To complete the uninstallation you need to reverse all the file edits and remove all the files from your server.',
+	'STAGE_UNINSTALL_TRACKER'				=> 'Uninstallation of phpBB Firetracker',
+	'STAGE_UNINSTALL_TRACKER_EXPLAIN'		=> 'The database tables, modules, permissions and data used by phpBB Firetracker have been removed from the database.  To complete the uninstallation you need to reverse all the file edits and remove all the files from your server.',
 	'STAGE_UPDATE'							=> 'Update',
-	'STAGE_UPDATE_TRACKER'					=> 'Update of phpBB Tracker',
-	'STAGE_UPDATE_TRACKER_EXPLAIN'			=> 'The phpBB Tracker has been updated to the latest version.',
+	'STAGE_UPDATE_TRACKER'					=> 'Update of phpBB Firetracker',
+	'STAGE_UPDATE_TRACKER_EXPLAIN'			=> 'The phpBB Firetracker has been updated to the latest version.',
 	'STAGE_VERIFY'							=> 'Verify',
 	'SUB_INTRO'								=> 'Introduction',
 	'SUB_LICENSE'							=> 'License',
@@ -101,17 +101,17 @@ $lang = array_merge($lang, array(
 
 	'UNAVAILABLE'							=> 'Unavailable',
 	'UNINSTALL_CONGRATS_EXPLAIN'			=> '
-		<p>You have now successfully uninstalled phpBB Tracker %1$s.</p>
+		<p>You have now successfully uninstalled phpBB Firetracker %1$s.</p>
 		<p>Clicking the button below will take you to your Administration Control Panel (ACP). <p><strong>Please now delete, move or rename the install directory before you use your board. If this directory is still present, only the Administration Control Panel (ACP) will be accessible.</strong></p>',
-	'UNINSTALL_INTRO'						=> 'Welcome to phpBB Tracker Uninstallation',
-	'UNINSTALL_INTRO_BODY'					=> 'With this option, it is possible to uninstall phpBB Tracker from your database.',
+	'UNINSTALL_INTRO'						=> 'Welcome to phpBB Firetracker Uninstallation',
+	'UNINSTALL_INTRO_BODY'					=> 'With this option, it is possible to uninstall phpBB Firetracker from your database.',
 	'UNINSTALL_START'						=> 'Start uninstall',
 	'UNWRITABLE'							=> 'Unwritable',
 	'UPDATE_CONGRATS_EXPLAIN'				=> '
-		<p>You have now successfully updated to phpBB Tracker %1$s.</p>
+		<p>You have now successfully updated to phpBB Firetracker %1$s.</p>
 		<p>Clicking the button below will take you to your Administration Control Panel (ACP). Take some time to examine the options available to you.</p><p><strong>Please now delete, move or rename the install directory before you use your board. If this directory is still present, only the Administration Control Panel (ACP) will be accessible.</strong></p>',
-	'UPDATE_INTRO'							=> 'Welcome to phpBB Tracker Installation Update',
-	'UPDATE_INTRO_BODY'						=> 'With this option, it is possible to update phpBB Tracker to the latest release.',
+	'UPDATE_INTRO'							=> 'Welcome to phpBB Firetracker Installation Update',
+	'UPDATE_INTRO_BODY'						=> 'With this option, it is possible to update phpBB Firetracker to the latest release.',
 	'UPDATE_START'							=> 'Start update',
 
 	'VERIFY_ALL_FILES'						=> 'All files found',
@@ -120,18 +120,18 @@ $lang = array_merge($lang, array(
 	'VERIFY_ALL_PERMISSIONS'				=> 'All permissions found',
 	'VERIFY_ALL_TABLES'						=> 'All tables found',
 	'VERIFY_CONGRATS_EXPLAIN'				=> '
-		<p>You have now successfully verified the installation of phpBB Tracker %1$s.</p>
+		<p>You have now successfully verified the installation of phpBB Firetracker %1$s.</p>
 		<p>Clicking the button below will take you to your Administration Control Panel (ACP).</p><p><strong>Please now delete, move or rename the install directory before you use your board. If this directory is still present, only the Administration Control Panel (ACP) will be accessible.</strong></p>',
 	'VERIFY_DUPLICATE_PERMISSIONS'			=> 'Checking if duplicate phpBB permissions exist',
 	'VERIFY_ERRORS'							=> 'Unsuccessful!',
 	'VERIFY_ERRORS_EXPLAIN'					=> '
-		<p>You have not successfully installed phpBB Tracker %1$s.</p>
+		<p>You have not successfully installed phpBB Firetracker %1$s.</p>
 		<p>Clicking the button below will take you back to verify the installation again.</p><p><strong>Please check the reported errors below.</strong></p>',
 	'VERIFY_FILES_EDITED'					=> 'Checking if files are edited',
 	'VERIFY_FILES_EXIST'					=> 'Checking if files exist',
 	'VERIFY_FOUND_DUPLICATE_PERMISSIONS'	=> 'Duplicate auth values can cause problems with permissions. The following duplicate auth values were found inside the %s table:<br />%s',
-	'VERIFY_INTRO'							=> 'Welcome to phpBB Tracker Installation Verfication',
-	'VERIFY_INTRO_BODY'						=> 'With this option, it is possible to verify that phpBB Tracker is installed correctly onto your server.',
+	'VERIFY_INTRO'							=> 'Welcome to phpBB Firetracker Installation Verfication',
+	'VERIFY_INTRO_BODY'						=> 'With this option, it is possible to verify that phpBB Firetracker is installed correctly onto your server.',
 	'VERIFY_MISSING_FILES'					=> 'The following files were missing:<br />%s',
 	'VERIFY_MISSING_FILES_EDITED'			=> 'The following files seem to not be edited:<br />%s',
 	'VERIFY_MISSING_MODULES'				=> 'The following modules were missing:<br />%s',
@@ -148,7 +148,7 @@ $lang = array_merge($lang, array(
 	'VERIFY_TRACKER_INSTALLATION_EXPLAIN'	=> 'This will check to make sure all the tracker is installed correctly.',
 	'VERSION'								=> 'Version',
 
-	'WELCOME_INSTALL'						=> 'Welcome to phpBB Tracker Installation',
+	'WELCOME_INSTALL'						=> 'Welcome to phpBB Firetracker Installation',
 	'WRITABLE'								=> 'Writable',
 ));
 

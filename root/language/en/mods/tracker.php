@@ -258,6 +258,7 @@ $lang = array_merge($lang, array(
 	'TRACKER_WATCH_TICKET'					=> 'Subscribe to ticket',
 	'TRACKER_WILL_NOT_FIX'					=> 'Will not fix',
 	'TRACKER_WILL_NOT_IMPLEMENT'			=> 'Will not implement',
+	'TRACKER_COPYRIGHT'						=> 'phpBB Firetracker',
 
 	'VIEWING_TRACKER'						=> 'Viewing tracker',
 	'VIEWING_TRACKER_PROJECT'				=> 'Viewing %s - %s',

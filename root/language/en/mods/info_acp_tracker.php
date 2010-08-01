@@ -36,7 +36,7 @@ if (empty($lang) || !is_array($lang))
 
 //tracker
 $lang = array_merge($lang, array(
-	'ACP_TRACKER'								=> 'phpBB Tracker',
+	'ACP_TRACKER'								=> 'phpBB Firetracker',
 	'ACP_TRACKER_ATTACHMENTS'					=> 'Manage attachments',
 	'ACP_TRACKER_ATTACHMENTS_DELETE_CONFIRM'	=> 'Are you sure you want to delete the selected items?',
 	'ACP_TRACKER_ATTACHMENTS_EXPLAIN'			=> 'View orphaned attachments and attachments in the upload folder that are not in the database.',
@@ -154,7 +154,7 @@ $lang = array_merge($lang, array(
 
 		<br />
 
-		<h1>How to update your installation of the phpBB Tracker</h1>
+		<h1>How to update your installation of the phpBB Firetracker</h1>
 
 		<p>Download the newest version.  Upload all the new files overwriting the old.  </p>
 
@@ -170,15 +170,15 @@ $lang = array_merge($lang, array(
 		Select the option to update to the latest version. You will be notified once the update is complete.
 		</p>
 	',
-	'TRACKER_VERSION_CHECK'						=> 'phpBB Tracker Version Check',
-	'TRACKER_VERSION_CHECK_EXPLAIN'				=> 'Checks to see if the version of phpBB Tracker you are currently running is up to date.',
+	'TRACKER_VERSION_CHECK'						=> 'phpBB Firetracker Version Check',
+	'TRACKER_VERSION_CHECK_EXPLAIN'				=> 'Checks to see if the version of phpBB Firetracker you are currently running is up to date.',
 	'TRACKER_VERSION_DELETE_ERROR'				=> 'The selected version cannot be deleted because tickets exist that refer to this version.  Delete all tickets refering to this version first.',
 	'TRACKER_VERSION_ENABLED'					=> 'Version Enabled',
 	'TRACKER_VERSION_EXPLAIN'					=> 'Current installed version of the tracker.',
 	'TRACKER_VERSION_NAME_EXPLAIN'				=> 'Name of the version to associate with the selected project. Use language constant if name is served from language file. Constant must be in mods/tracker.php file.',
-	'TRACKER_VERSION_NOT_UP_TO_DATE_ACP'		=> 'Your version of phpBB Tracker is not up to date.<br />Below you will find a link to the release announcement for the latest version as well as instructions on how to perform the update.',
+	'TRACKER_VERSION_NOT_UP_TO_DATE_ACP'		=> 'Your version of phpBB Firetracker is not up to date.<br />Below you will find a link to the release announcement for the latest version as well as instructions on how to perform the update.',
 	'TRACKER_VERSION_NO_NAME'					=> 'There was no name entered for this version.  You must enter a name.',
-	'TRACKER_VERSION_UP_TO_DATE_ACP'			=> 'Your installation is up to date, no updates are available for your version of phpBB Tracker. You do not need to update your installation.',
+	'TRACKER_VERSION_UP_TO_DATE_ACP'			=> 'Your installation is up to date, no updates are available for your version of phpBB Firetracker. You do not need to update your installation.',
 ));
 
 ?>
