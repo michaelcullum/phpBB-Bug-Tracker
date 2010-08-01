@@ -6,7 +6,7 @@
 	<header>
 		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (offline version)"/>
 		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
-		<title lang="en"><![CDATA[phpBB Tracker II]]></title>
+		<title lang="en"><![CDATA[phpBB FireTracker]]></title>
 		<description lang="en"><![CDATA[Is a bug, issue and feature tracker for phpBB]]></description>
 		<author-notes lang="en"><![CDATA[This MOD requires PHP5]]></author-notes>
 		<author-group>
@@ -33,6 +33,14 @@
 				<username><![CDATA[Unknown Bliss]]></username>
 				<homepage><![CDATA[http://unknownbliss.co.uk]]></homepage>
 				<email><![CDATA[sa.chelsea@live.co.uk]]></email>
+				<contributions-group>
+					<contributions status="current" position="Developer"/>
+				</contributions-group>
+			</author>
+			<author>
+				<realname><![CDATA[Sam Thompson]]></realname>
+				<username><![CDATA[SyntaxError90]]></username>
+				<homepage><![CDATA[http://openflamecms.com]]></homepage>
 				<contributions-group>
 					<contributions status="current" position="Developer"/>
 				</contributions-group>
