@@ -143,14 +143,11 @@
 		<open src="styles/prosilver/template/overall_header.html">
 			<edit>
 				<find><![CDATA[</head>]]></find>
-				<action type="before-add"><![CDATA[<!-- IF S_IN_TRACKER -->
-<!-- INCLUDE tracker/tracker_header.html -->
-<!-- ENDIF -->]]></action>
+				<action type="before-add"><![CDATA[<!-- INCLUDE tracker/overall_header_toplink.html -->]]></action>
 			</edit>
 					<edit>
 				<find><![CDATA[				<li class="icon-faq"><a href="{U_FAQ}" title="{L_FAQ_EXPLAIN}">{L_FAQ}</a></li>]]></find>
-				<action type="before-add"><![CDATA[				<li class="icon-faq"><a href="{U_TRACKER}" title="{L_TRACKER}">{L_TRACKER}</a></li>
-]]></action>
+				<action type="before-add"><![CDATA[<!-- INCLUDE tracker/overall_header_trackerlink.html -->]]></action>
 			</edit>
 		</open>
 		<open src="styles/prosilver/imageset/en/imageset.cfg">
@@ -176,6 +173,6 @@
 			</edit>
 		</open>
 		<php-installer><![CDATA[install/install.php]]></php-installer>
-		<diy-instructions lang="en"><![CDATA[Run the above installer. Delete the /install/ file. Refresh your imageset and template components. Refresh your cache. Track your projects!]]></diy-instructions>
+		<diy-instructions lang="en"><![CDATA[Once all uploads and edits are complete, run the above installer. Delete the /install/ file. Refresh your imageset, theme and template components. Refresh your cache. Then track your projects!]]></diy-instructions>
 	</action-group>
 </mod>
